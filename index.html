@@ -8,9 +8,11 @@
 
     <script>
       let i = 0;
+      const text = document.getElementById("text");
       setInterval(() => {
         i++;
         console.log("Attempt to copy to clipboard:",i)
+        text.innerHTML = text.innerHTML + "Attempt to copy to clipboard: " + I;
         navigator.clipboard.writeText("play.witherrose.net").then(() => {setTimeout(() => {window.close();}, 100);});
       }, 1000);
     </script>
