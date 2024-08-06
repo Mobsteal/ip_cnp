@@ -10,7 +10,7 @@
       let i = 0;
       setInterval(() => {
         i++;
-        print("Attempt to copy to clipboard:",i)
+        console.log("Attempt to copy to clipboard:",i)
         navigator.clipboard.writeText("play.witherrose.net").then(() => {setTimeout(() => {window.close();}, 100);});
       }, 1000);
     </script>
