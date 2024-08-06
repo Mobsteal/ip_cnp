@@ -7,7 +7,12 @@
     <h1 id="text">Please Wait while we copy Wither Rose server IP to your clipboard!</h1>
 
     <script>
+      let i = 0;
+      setInterval(() => {
+        i++;
+        print("Attempt to copy to clipboard:",i)
         navigator.clipboard.writeText("play.witherrose.net").then(() => {setTimeout(() => {window.close();}, 100);});
+      }, 1000);
     </script>
   </body>
 </html>
