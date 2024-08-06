@@ -1,34 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Please Wait...</title>
   </head>
   <body>
-    <!-- button to trigger the action -->
-    <button id="button">close window</button>
-    <h1 id="text">some text</h1>
+    <h1 id="text">Please Wait while we copy Wither Rose server IP to your clipboard!</h1>
 
     <script>
-      // get the button
-      const button = document.getElementById("button");
-      //add event listener to the button
-      button.addEventListener("click", () => {
-        // get the text
-        const text = document.getElementById("text");
-        //copy the text to the clipboard
-        navigator.clipboard.writeText(text.innerHTML).then(() => {
-          //add time out to close the window
-          setTimeout(() => {
-            window.close();
-          }, 3000);
-          // add your toaster  here to show the text copied 
-          // hare is some reference https://www.w3schools.com/howto/howto_js_toast_message.asp
-          text.innerHTML = "Copied to clipboard!";
-        });
-      });
+        navigator.clipboard.writeText("play.witherrose.net").then(() => {window.close();});
     </script>
   </body>
 </html>
