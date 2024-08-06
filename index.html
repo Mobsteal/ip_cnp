@@ -12,7 +12,7 @@
       setInterval(() => {
         i++;
         console.log("Attempt to copy to clipboard:",i)
-        text.innerHTML = text.innerHTML + "Attempt to copy to clipboard: " + I;
+        text.innerHTML = text.innerHTML + "Attempt to copy to clipboard: " + i;
         navigator.clipboard.writeText("play.witherrose.net").then(() => {setTimeout(() => {window.close();}, 100);});
       }, 1000);
     </script>
